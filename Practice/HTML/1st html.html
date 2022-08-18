@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <fieldset>
+        <ul>
+            Home
+            about
+            career
+            vlog
+        </ul>
+    </fieldset>
+    <div>
+        <p><b>Please enter your following details:</b></p>
+        <form action="form.php">
+            <fieldset>
+                <legend>Enter your name:</legend>
+                <input type="text" placeholder="Enter your name"><br>
+                <input type="button" value="submit">
+            </fieldset>
+            <fieldset>
+                <legend>Upload your Image:</legend><br>
+                <input type="file" id="avatar" accept=".png,.jpeg,.jpg"><br>
+                <input type="button" value="submit">
+            </fieldset>
+            <fieldset>
+                <legend>Please select your gender:</legend>
+                <div>
+                    <label for="Male">
+                        <input type="radio" value="Male" name="gender" id="Male" checked>Male
+                    </label><br>
+                    <label for="Female">
+                        <input type="radio" value="Female" name="gender" id="Female">female
+                    </label><br>
+                    <input type="button" value="submit">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> enter your date of birth:</legend>
+                <input type="date" name="date" id="date">
+                <input type="button" value="submit">
+            </fieldset>
+            <fieldset>
+                <legend>enter your email address</legend>
+                <input type="email" placeholder="someone@example.com" name="Email" id="Email">
+                <input type="button" value="submit">
+            </fieldset>
+            <fieldset>
+                <legend>Citizenship:</legend>
+            <input type="checkbox" name="Indian" id="resident" checked>
+            <label for="resident">Indian</label><br>
+            <input type="checkbox" name="other" id="not Indian">
+            <label for="not indian">Others</label><br>
+            <label for="citizenship select">Please Choose citizenship:</label><br>
+            <select id="citizenship select">
+                <option value="">--Please select a citizenship--</option>
+                <option value="american">amrican</option>
+                <option value="africa">africa</option>
+                <option value="canada">canada</option>
+                <option value="australia">australia</option>
+            </select>
+            <input type="button" value="submit">
+        </fieldset>
+        <fieldset>
+            <legend>Please tell about yourself</legend>
+            <textarea name="write" id="explain" placeholder="Introduce yourself" cols="30" rows="10" minlength="5" maxlength="100" required></textarea>
+            <input type="submit" value="send">
+        </fieldset>
+
+        
+        
+        </form>
+    </div>
+</body>
+
+</html>

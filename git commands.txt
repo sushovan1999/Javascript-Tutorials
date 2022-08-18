@@ -1,0 +1,13 @@
+git config --global user.email "sushovan1999@gmail.com";
+git config --global user.name "sushovan1999"; 
+
+git init  (Intitialize it as git repository)
+git clone "url" (create a copy of a specific repository or branch within a repository eg:GitDemo which we cloned)
+git add js1.js (add a file i.e Store changes)
+git status (To see status of file)
+git commit -m "added first js program" (Commit changes and m means message)
+git push -u origin main (Push the changes and u means set upstream)
+
+
+
+https://github.com/naval-shekhawat/BasicJS.git
