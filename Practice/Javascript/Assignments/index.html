@@ -1,0 +1,39 @@
+<!-- //Create a program wherein you will be given a list of name of the people along with their designation, based on the name you type in from the input field of the given html file the relevant designation of the person will be displayed.
+// Following are the Designation of the people
+// -Alex is a Developer
+// -John is an Artist
+// -Strek is a Singer
+// -Smith is an Actor -->
+<html>
+    <head>
+        <script>
+                function GetTheNameofEmployee() {
+            let designation = document.getElementById("designation").value;
+            switch (designation) {
+                case "Developer" :
+                    console.log("The name of the employee is Alex");
+                    break;
+                case "Artist" :
+                    console.log("The name of the employee is John");
+                    break;
+                case "Singer":
+                    console.log("The name of the employee is Strek");
+                    break;
+                case "Actor":
+                    console.log("The name of the employee is Smith");
+                    break;
+                default:
+                    console.log("Not an Employee")
+                    break;
+            }
+            }
+        </script>
+        <body>
+        <div>
+        <label for="designation">enter the designation</label>
+        <input type="text" id="designation">
+        <button onclick="GetTheNameofEmployee()">GetTheNameofEmployee</button>
+    </div>
+        </body>
+    </head>
+</html>
