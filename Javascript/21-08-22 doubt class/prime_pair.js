@@ -1,9 +1,10 @@
 (function() {
 
-    function isPrime(num) {
+    function isPrime(number) {
         let prime = true;
-        for(let i = 2; i < Math.sqrt(num); i++){
-            if(num % i == 0) {
+        if(number == 1) return false;
+        for(let i = 2; i <= Math.sqrt(number); i++){
+            if(number % i == 0) {
                 prime = false;
                 break;
             }
@@ -12,7 +13,7 @@
     }
 
     function getPairs(number){
-        for(let i = 2 ; i < Math.sqrt(number); i++) {
+        for(let i = 1 ; i <(number); i++) {
             if(isPrime(i) && isPrime(number -i)){
              console.log(`The pair is ${i} and ${number-i} `);
             }
