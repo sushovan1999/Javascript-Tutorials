@@ -7,14 +7,15 @@
 
    // let [,middleName,] = name;
    //console.log(middleName);
-    let [firstName, middleName="K", lastName, x = 25] = name;
+    let [firstName, middleName="K", lastName, x = 25] = name; // the default value only works when there is  no value assigned in the array
     //console.log("My name is " + firstName + " " + middleName + " " + lastName );
     console.log(`My name is ${firstName} ${middleName} ${lastName}`);
     console.log(x);
 
     let cities = ['Mumbai', 'Chennai', 'Kolkatta', 'Delhi'];
-    let [,second, ...restOfTheCities] = cities;
+    let [,second, ...restOfTheCities] = cities; // ... is called rest operator
     console.log(restOfTheCities);
     console.log(second);
+    
 
 })();
