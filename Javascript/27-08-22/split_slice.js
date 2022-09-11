@@ -17,7 +17,9 @@
     //slice
     let cities = ['Mumbai', 'Chennai', 'Kolkatta', 'Delhi'];
     let slicedCities =  cities.slice(0,-2)
+    let newslicedCities =  cities.slice(1)
     console.log(slicedCities);
+    console.log(newslicedCities);
 
     // splice
     console.log("===================== SPLICE =======")
