@@ -15,5 +15,5 @@
         }
     }
 
-        console.log((findArmstrongno(153)));
+        console.log((findArmstrongno(953)));
 })();
